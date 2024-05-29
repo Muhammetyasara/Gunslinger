@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bde5b51eef6a4560b2a2442b047a9a7, type: 3}
+  m_Name: SwAccountData
+  m_EditorClassIdentifier: 
+  titlesList:
+  - games: []
+    id: 
+    name: --- select ---
+    unityProjectId: 
+  - games:
+    - adMobId: 
+      bundleId: 
+      facebookAppId: 440359715617601
+      facebookToken: 8bfb0fa7fd4f6e5786f3e279f29549f1
+      gameAnalyticsKey: 35ef8760dc1a81407fd8d0ea4968d283
+      gameAnalyticsSecret: b6778bed2485bf91dce7922b0f544b941a14a36d
+      id: 9fc46bd3-cd04-4f95-8a08-496d4021e21f
+      isAppKey: 
+      os: android
+      platform: google_play
+      storeId: 
+    id: d6610aa3-f92d-483a-b69b-c40b7a085601
+    name: Gunslinger
+    unityProjectId: 
+  integrationGuideUrl: 

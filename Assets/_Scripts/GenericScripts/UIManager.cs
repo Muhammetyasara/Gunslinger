@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using SupersonicWisdomSDK;
 
 [DefaultExecutionOrder(-200)]
 public class UIManager : MonoBehaviour
@@ -22,6 +23,7 @@ public class UIManager : MonoBehaviour
     public GameObject gameNameParentGameObject;
     public GameObject tutorialHand;
     public GameObject tutorialText;
+    public GameObject takePartText;
     public GameObject[] panels;
     public GameObject restartButton;
     public GameObject successText;
@@ -176,7 +178,6 @@ public class UIManager : MonoBehaviour
                 {
                     return;
                 }
-
                 gameNameParentGameObject.SetActive(false);
                 tutorialHand.SetActive(false);
                 tutorialText.SetActive(false);
@@ -187,6 +188,7 @@ public class UIManager : MonoBehaviour
                 restartButton.SetActive(true);
 
                 GameManager.instance.isLevelStarted = true;
+                SupersonicWisdom.Api.NotifyLevelStarted(0, GameManager.instance.currentLevel, null);
                 GameManager.instance.isLevelCompleted = false;
                 GameManager.instance.isLevelFailed = false;
                 isLevelStartedForUI = true;
@@ -198,6 +200,8 @@ public class UIManager : MonoBehaviour
     {
         if (!isLevelCompletedForUI)
         {
+            SupersonicWisdom.Api.NotifyLevelCompleted(0, GameManager.instance.currentLevel, null);
+
             StartCoroutine(WaitForLevelComplete(delay));
 
             isLevelCompletedForUI = true;
@@ -220,6 +224,7 @@ public class UIManager : MonoBehaviour
     {
         if (!isLevelFailedForUI)
         {
+            SupersonicWisdom.Api.NotifyLevelFailed(0, GameManager.instance.currentLevel, null);
             StartCoroutine(WaitForLevelFail(delay));
 
             isLevelFailedForUI = true;
@@ -349,5 +354,10 @@ public class UIManager : MonoBehaviour
         GameManager.instance.RestartLevel();
 
         isRestartButtonPressed = true;
+    }
+
+    public void TakeGunPart()
+    {
+        takePartText.gameObject.SetActive(true);
     }
 }

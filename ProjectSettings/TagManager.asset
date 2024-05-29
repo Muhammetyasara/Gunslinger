@@ -3,30 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Gem
+  - UpgradeArea
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullet
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Belt
+  - Gate
+  - Gun
+  - Trap
+  - Target
+  - Finish
+  - EndBelt
+  - Chest
+  - Upgrade
+  - UpgradeEntrance
+  - MainTarget
+  - Chunk
+  - ExplosiveBullet
+  - MoneyRushFinish
+  - ExplosionVFX
+  - SpriteText
   - 
   - 
   - 
