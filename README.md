@@ -3,6 +3,10 @@
 ## 📝 Description
 **Gunslinger is a platform-shooting mobile game with many different types of weapons and challenging levels.**
 
+## 🎮 Game Preview
+
+![GunslingerCreative1 ‐ Clipchamp ile yapıldı](https://github.com/user-attachments/assets/cf11ec56-087f-4fca-8c97-5f6f9a4d838b)
+
 ## 🛠️ Technologies Used
 - C#
 - Unity3D
@@ -26,6 +30,4 @@
 
 - Project Link: https://github.com/Muhammetyasara/Gunslinger
 
-## 🎮 Game Preview
 
-![GunslingerCreative1 ‐ Clipchamp ile yapıldı](https://github.com/user-attachments/assets/cf11ec56-087f-4fca-8c97-5f6f9a4d838b)
