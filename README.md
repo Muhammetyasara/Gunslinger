@@ -17,7 +17,7 @@
 1. Clone the repository
 
 
-```git clone https://github.com/yourusername/yourproject.git```
+```git clone https://github.com/Muhammetyasara/Gunslinger.git```
 
 2. Open project with Unity Hub
 
